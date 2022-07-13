@@ -1,0 +1,149 @@
+/*   nav container  */
+body {
+  height: 100vh;
+  width:100% ; 
+  font-family: initial;
+  background-color: rgb(41, 37, 37);
+flex-wrap: wrap;
+}
+h1{
+   font-weight: bolder;
+   font-style: italic;
+}
+/* links decoretion */
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+a:hover{
+    color: grey;
+}
+/* nav style */
+.nav-container {
+  background-color: #000;
+  box-shadow: 10px 90px 90px ghostwhite;
+  position: fixed;
+  right: 0;
+  height: 100%;
+  z-index: 2;
+  
+}
+/* links titels : hover  */
+.nav-titles:hover {
+  color: rgb(211, 208, 208);
+  /* font-size: 20px; */
+  cursor: pointer;
+}
+/* end nav container style */
+
+/* main container   */
+.show-container{
+    position: relative;
+    right: 80px;
+    width: 100px;
+}
+.top-main{
+    border: 10px 20px white;
+    border-radius: 10px;
+}
+
+.box-user {
+   background-color: rgb(1, 0, 0); 
+   width: 200px;
+   text-align: center;
+   border-radius: 20px;
+   margin: 20px;
+   padding: 5px;
+   border-color: beige;
+}
+
+
+/*    carousela   */
+
+
+.carousela{
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    height: 250px;
+    width: 100%;
+    position: relative;
+       overflow: hidden;
+    
+}
+
+
+/*  left and right errow style */
+.carousela .switch-left,
+.carousela .switch-right{
+    
+    color: aliceblue;
+    font-weight: bold;
+    height: 250px;
+    width: 70px;
+    line-height: 250px; 
+    font-size: 25px;
+    text-align: center;
+    /* background-color: ; */
+    font-family: sans-serif;
+    top: 0;
+    z-index: 3;
+    scroll-behavior: smooth;
+ 
+}
+
+/* left errow */
+.carousela .switch-left{
+    position: absolute;
+    left:-20px;
+}
+/* right errow */
+.carousela .switch-right {
+    position: absolute;
+    right: -20px;
+}
+/*  ganers container  */
+.carouselabox{
+    height: 250px;
+    width: 900px;
+    white-space: nowrap;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 10px !important;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+/* carouselabox img style */
+.carouselabox img{
+    min-width: 147px;
+    max-width: 147px;
+    height: 200px;
+    background-size: cover;
+    background-color: lightgreen;
+    margin:  5px 10px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    z-index: 2;
+}
+
+.image:hover{
+  height: 150px;
+    transform: scale(1.4);
+    z-index: 5;
+    background-color: rgb(60, 60, 57);
+    opacity: 0.9;
+}
+
+
+/* media */
+@media screen and (max-width: 450px) {
+    body{
+        margin: auto;
+    }
+    .show-container{
+        position: relative;
+        right: 100px;
+        overflow: hidden;
+    }
+ }

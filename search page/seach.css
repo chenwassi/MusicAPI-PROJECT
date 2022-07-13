@@ -1,0 +1,67 @@
+body {
+
+    font-family: initial;
+    background-color: rgb(41, 37, 37);
+  }
+  /*  */
+  a{
+    color: aliceblue;
+    text-decoration: none;
+}
+a:hover{
+    color: grey;
+}
+/* nav container */
+.nav-container {
+    background-color: #000;
+    box-shadow: 10px 90px 90px ghostwhite;
+    position: fixed;
+    right: 0;
+    height: 100%;
+    
+  }
+  /* titels hover  */
+  .nav-titles:hover {
+    color: rgb(211, 208, 208);
+    /* font-size: 20px; */
+    cursor: pointer;
+  }
+  /* input */
+  input{
+    width: 500px;
+    height: 50px;
+  }
+
+/* background-color box */
+    .back{
+      background-color: rgb(61, 54, 54);
+      border-radius: 10px;
+    
+  }
+  .filter{
+    overflow: hidden;
+}
+.box img:hover{
+  background-color: bisque;
+  opacity: 0.2;
+    width: 200px;
+    height:200px;
+    transition: width 1s, height 1s ;
+    cursor: pointer;
+}
+input{
+  margin-top: 60px;
+
+ }
+
+
+/* media */
+@media screen and (max-width: 450px) {
+  body{
+      margin: auto;
+  }
+  input{
+    width: 200px;
+  
+  }
+}
